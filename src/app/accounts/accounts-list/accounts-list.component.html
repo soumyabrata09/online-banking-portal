@@ -1,0 +1,13 @@
+<div class="acc-list_form-decor">
+    <mat-card>
+        <mat-card-title class="acc-list_form-decor__lbl-bg">Accounts</mat-card-title>
+        <mat-list>
+            <mat-list-item *ngFor="let account of (accounts$ | async)">
+                <div class="acc-list_form-decor--width">
+                    <div><strong>IBAN:</strong> {{ account.iban }}</div>
+                    <div><strong>Balance:</strong> {{ account.balance | currency }}</div>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+</div>
