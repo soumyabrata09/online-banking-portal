@@ -9,7 +9,7 @@
    <a class="menu-spacer" mat-button routerLink="/auth/login">Login</a>
   }
   @if (authService.getRole() === 'Admin') {
-   <a mat-button routerLink="/admin">Admin</a>
+   <a class="menu-spacer" mat-button routerLink="/admin">Admin</a>
   }
   @if (authService.isLoggedIn()) {
   <span style="padding-left: 0.5rem;"></span>

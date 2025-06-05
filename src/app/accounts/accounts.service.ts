@@ -10,8 +10,8 @@ export class AccountsService {
 
   getAccounts(): Observable<any[]> {
     return of([
-      { id: 1, iban: 'ABCD1234', balance: 5000 },
-      { id: 1, iban: 'WVXYZ9876', balance: 3200 }
+      { id: 1, iban: 'DE123456789012345678', balance: 5000 },
+      { id: 1, iban: 'AT611904300234573201', balance: 3200 }
     ]);
   }
 
