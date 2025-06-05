@@ -8,4 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AdminComponent {
 
+  users = [
+    { 
+      id: 1, 
+      name: 'Admin User', 
+      email: 'john_doe@admin.com', 
+      role: 'Admin' 
+    },
+    { 
+      id: 2, 
+      name: 'Customer User', 
+      email: 'johhny_bravo@user.com', 
+      role: 'Customer' 
+    }
+  ];
 }

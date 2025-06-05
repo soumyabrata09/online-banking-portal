@@ -6,7 +6,7 @@ import { roleGuard } from './core/role.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/accounts',
+    redirectTo: '/dashboard',
     pathMatch: 'full'
   },
   { 

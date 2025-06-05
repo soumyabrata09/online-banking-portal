@@ -53,6 +53,14 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
+> [!INFO]
+> ```text
+> Admin User: john_doe@admin.com
+> Admin Pwd: johndoe1234
+>
+> Normal User: johhny_bravo@user.com
+> Normal User Pwd: user1234
+> ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
@@ -73,7 +81,6 @@ As Angular applications grow, managing state (data shared between components, UI
 
 - Maintain and scale large applications
 
-> [!NOTE]
 ### Key Concepts
 
 #### Store:

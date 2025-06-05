@@ -1,3 +1,14 @@
 .spacer {
     flex: 1 1 auto;
 }
+
+.menu-spacer {
+    margin: 8px;
+    color: aliceblue;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: aqua;
+    }
+}
