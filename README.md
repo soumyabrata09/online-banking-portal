@@ -53,7 +53,7 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
-> [!INFO]
+> [!IMPORTANT]
 > ```text
 > Admin User: john_doe@admin.com
 > Admin Pwd: johndoe1234
