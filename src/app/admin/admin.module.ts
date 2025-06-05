@@ -3,7 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
+import { RouterModule, Routes } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
+const routes: Routes = [
+  {
+    path: '', component: AdminComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -11,7 +18,9 @@ import { AdminComponent } from './admin.component';
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    RouterModule.forChild(routes),
+    MatCardModule
   ]
 })
 export class AdminModule { }

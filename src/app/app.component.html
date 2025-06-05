@@ -2,13 +2,18 @@
   <span>Online Banking Portal</span>
   <span class="spacer"></span>
   @if (authService.isLoggedIn()) {
-   <a mat-button routerLink="/accounts">Accounts</a>
+   <a class="menu-spacer" mat-button routerLink="/dashboard">Dashboard</a>
+   <a class="menu-spacer" mat-button routerLink="/accounts">Accounts</a>
+   <a class="menu-spacer" mat-button routerLink="/transactions">Transactions</a>
   } @else {
-   <a mat-button routerLink="/auth/login">Login</a>
+   <a class="menu-spacer" mat-button routerLink="/auth/login">Login</a>
+  }
+  @if (authService.getRole() === 'Admin') {
+   <a mat-button routerLink="/admin">Admin</a>
   }
   @if (authService.isLoggedIn()) {
   <span style="padding-left: 0.5rem;"></span>
-   <button mat-button (click)="logout()">Logout</button>
+   <button mat-raised-button color="primary" (click)="logout()">Logout</button>
   }
 </mat-toolbar>
 <router-outlet></router-outlet>

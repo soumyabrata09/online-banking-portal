@@ -1,1 +1,17 @@
-<p>dashboard works!</p>
+<mat-card>
+    <mat-card-title class="header--bg">Dashboard</mat-card-title>
+    <mat-card-content class="dashboard-content--bg">
+        <h3>Accounts</h3>
+        <ul>
+            <li *ngFor="let account of accounts" class="acc-list--bg">
+                <strong>{{ account.iban }}</strong>: {{ account.balance | currency }}
+            </li>
+        </ul>
+        <h3>Recent Transactions</h3>
+        <ul>
+            <li *ngFor="let rt of recentTransactions" class="rt-list--bg">
+                {{ rt.date }} - {{ rt.type }} - <span [ngClass]="rt.type === 'CREDIT' ? 'credit': 'debit'">{{ rt.amount | currency }}</span> ({{ rt.description }})
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>
